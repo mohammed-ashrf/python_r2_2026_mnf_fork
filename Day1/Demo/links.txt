@@ -54,4 +54,11 @@ updates ====> create files , updates
          git push origin master
 
 
+===============> added as Collaborator
+clone from repo : git clone repolink
+                    git add .
+                    git commit -m "MSg"
+                    git push origin master
+
+
 
