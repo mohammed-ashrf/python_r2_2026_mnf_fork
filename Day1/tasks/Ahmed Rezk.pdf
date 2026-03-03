@@ -1,0 +1,63 @@
+SSH Keys – Concepts and Essential Commands
+
+1. Introduction
+
+SSH (Secure Shell) is a cryptographic network protocol used to securely access remote systems
+and services. SSH keys are widely used for authentication with Git platforms and remote servers.
+
+
+2. What Is an SSH Key?
+
+An SSH key pair consists of a Private Key (kept secret) and a Public Key (shared with servers).
+Authentication succeeds when the server verifies that you own the matching private key.
+
+
+3. Why Use SSH Keys?
+
+• Stronger security than passwords
+• No repeated credential entry
+• Required for automation and CI/CD
+• Recommended for Git operations
+
+
+4. Generating an SSH Key
+
+Recommended command:
+ssh-keygen -t ed25519 -C "your_email@example.com"
+Alternative (RSA 4096):
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+
+5. Starting SSH Agent
+
+Linux/macOS:
+eval "$(ssh-agent -s)"
+Windows (Git Bash):
+eval $(ssh-agent -s)
+
+
+6. Adding Private Key to Agent
+
+ssh-add ~/.ssh/id_ed25519
+Verify:
+ssh-add -l
+
+
+7. Testing SSH Connection
+
+Example for GitHub:
+ssh -T git@github.com
+
+
+8. Clone Using SSH
+
+git clone git@github.com:username/project.git
+
+
+9. Security Best Practices
+
+• Never share your private key
+• Use strong passphrase
+• Set proper permissions:
+chmod 600 ~/.ssh/id_ed25519
+chmod 644 ~/.ssh/id_ed25519.pup
