@@ -4,6 +4,10 @@ install git mac: https://git-scm.com/install/mac
 
 
 
+==================
+commit Message Link : https://eqraatech.com/git-commit-message-cheatsheet/
+
+
 
 
 ============> git : tool make local 
