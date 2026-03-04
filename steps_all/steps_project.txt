@@ -1,0 +1,31 @@
+=============> Ecommerce
+============================> every feature : branch
+-- login
+-- register
+-- home 
+-- navbar
+-- footer
+-- products
+-- cart  
+
+-- unit testing 
+-- v2:mobile 
+
+
+===========> master : structre 
+front :
+index.html
+style.css
+loginPage
+registerPage
+back :
+script.js
+
+upload origin master
+
+every one in team ===> clone + create branch with feature name
+single : create branch with feature name 
+After end every feature --> push  ---> merge with master  (login)
+regiser ----> master ===> push -===> merge master 
+
+
