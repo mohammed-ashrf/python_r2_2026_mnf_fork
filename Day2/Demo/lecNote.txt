@@ -50,3 +50,9 @@ clear stash : git stash clear
 show files has stash : git stash show 
 delete specific stash : git stash drop stash_id (stash@{0})
                         
+==================
+fork             clone
+copy from repo : 
+github           local
+     updates :
+synchronize   not_Synchronized
