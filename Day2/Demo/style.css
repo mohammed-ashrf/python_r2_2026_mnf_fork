@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0;
     margin: o;
@@ -7,6 +8,7 @@
 }
 
 :root{
+    --main-text-family:'Franklin Gothic Medium'
 --main-color:gray;
 }
 
@@ -21,6 +23,17 @@ nav ul li {
 nav ul li a{
     text-align: center;
     text-decoration: none;
-    color: brown;
+    border-radius: 1px 2px 1px 2px;
+    color: rgb(42, 165, 128);
     padding: 2px;
+    margin: 10px;
+    -webkit-border-radius: 1px 2px 1px 2px;
+    -moz-border-radius: 1px 2px 1px 2px;
+    -ms-border-radius: 1px 2px 1px 2px;
+    -o-border-radius: 1px 2px 1px 2px;
+}
+footer section{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
