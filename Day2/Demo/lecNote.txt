@@ -29,6 +29,11 @@ remote : git branch -r
 -------
 switch to another branch : git switch branchName
 switch to another branch : git checkout  branchName
+switch to another branch : git checkout branchName
+switch + create : git switch  -c branchName
+remove brach : ---> switch to another any branch 
+local :  git branch -d branchName
+remote : git push origin -d  branchName
 
 switch + create : git  swicth -c  branchName
 
